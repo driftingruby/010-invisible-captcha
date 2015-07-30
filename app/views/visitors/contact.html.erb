@@ -37,3 +37,14 @@
 </div>
 </div>
 <% end %>
+<script type="text/javascript">
+  setTimeout(function(){
+    $('#contact_from').simulate("key-sequence", {sequence: "sample@driftingruby.com", delay: 10});
+  },500);
+  setTimeout(function(){
+    $('#contact_subject').simulate("key-sequence", {sequence: "Site Feedback", delay: 10});
+  },1000);
+  setTimeout(function(){
+    $('#contact_message').simulate("key-sequence", {sequence: "You should really have more episodes about different taco flavorings.", delay: 10});
+  },1500);
+</script>
