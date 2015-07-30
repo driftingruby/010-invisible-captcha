@@ -1,0 +1,39 @@
+<%= simple_form_for :contact, html: { class: 'form-horizontal' } do |f| %>
+<div class='row'>
+<div class='col-xs-6 col-xs-offset-3'>
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Contact</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <%= f.label :from, class: 'col-sm-3 control-label' %>
+          <div class="col-sm-9">
+            <%= f.input_field :from, class: 'form-control', placeholder: 'From Email', require: true %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :subject, class: 'col-sm-3 control-label' %>
+          <div class="col-sm-9">
+            <%= f.input_field :subject, class: 'form-control', placeholder: 'Subject', require: true %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :message, class: 'col-sm-3 control-label' %>
+          <div class="col-sm-9">
+            <%= f.input_field :message, as: :text, class: 'form-control', placeholder: 'Message' %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-9 col-sm-offset-3">
+            <%= f.button :submit, 'Send Message' %>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+<% end %>
