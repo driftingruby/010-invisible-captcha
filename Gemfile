@@ -19,3 +19,8 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
+gem 'daemons'
+gem 'delayed_job'
+gem 'delayed_job_active_record'
+gem 'whenever', require: false
